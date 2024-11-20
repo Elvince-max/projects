@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemani~Assignment</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assignment-kemani.css">
+    <script src="assignment-kemani.js" defer></script>
+</head>
+<body>
+    <h2><strong>ELDORET CROSSROAD SACCO</strong></h2>
+    <form class="form">
+        <label for="user">Served by:</label>
+        <input class="user" id="user" type="text" placeholder="Enter name">
+    
+        <div class="Departure">
+            <label for="departure">Departure:</label>
+            <select class="departure-town" name="departure" id="departure">
+                <option value=".">...</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value="Kitale">Kitale</option>
+                <option value="Kabarnet">Kabarnet</option>
+            </select>
+        </div>
+    
+        <div class="Destination">
+            <label for="destination">Destination:</label>
+            <select class="destination-town" name="destination" id="destination">
+                <option value=".">...</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value="Kitale">Kitale</option>
+                <option value="Kabarnet">Kabarnet</option>
+            </select>
+        </div>
+        
+        <div>
+            <span class="deptContact"></span><br>
+            <span class="destContact"></span>
+        </div>
+        
+      <div>  <label for="ticketNo">Ticket No:</label>
+        <input class="ticketNo" id="ticketNo" type="number">
+    
+        <div> <label for="date">Date:</label>
+        <input class="date" id="date" type="datetime-local">
+    
+        <div> <label for="vehicle">Vehicle:</label>
+        <input class="vehicle" id="vehicle" type="text">
+    
+        <div> <label for="seat">Seat No:</label>
+        <input class="seat" id="seat" type="number" min="1" max="14">
+    
+        <div> <label for="fare">Fare:</label>
+        <input class="fare" id="fare" type="number">
+    
+        <div>  <label for="passName">Passenger Name:</label>
+        <input class="passName" id="passName" type="text" placeholder="Enter passenger name">
+    
+        <div> <label for="phone">Phone:</label>
+        <input class="phone" id="phone" type="number">
+    
+        <input class="btn btn-primary" onclick="submitForm(event);" type="submit">
+    </form>
+
+    <!-- Receipt Section -->
+    <div class="receipt" >
+    
+    </div>
+</body>
+</html>
